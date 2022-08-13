@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact -- First Check Point of React Skill Factory by Avalith</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/contact.css">
+    <script src="../scripts/contact.js"></script>    
+</head>
+<body>
+    <div class="mainContainer">
+        <h1 class="pageTitle">Contact Us</h1>
+        <div class="navBar">
+            <a class="button" href="../index.html">Home</a>
+            <a class="button" href="./users.html">Users</a>
+            <a class="button" href="./cards.html">Cards</a>
+            <a class="button" href="./contact.html">Contact</a>
+        </div>    
+        <div class="contactForm" id="contactForm">
+            <form id="contactForm" action="">
+                <label for="name">Name</label>
+                <input type="text" name="name" value="" id="contactFormName">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="contactFormEmail" onblur="validateEmail();">
+                <label for="comments">Comments</label>
+                <textarea name="comments" id="contactFormComments" cols="30" rows="10"></textarea>  
+                <button id="contactFormReset" onclick="return(formReset());">Reset</button>  
+                <button id="contactFormSend" onclick="return(sendForm());">Send</button> 
+            </form>
+        </div>
+    </div>    
+</body>
+</html>

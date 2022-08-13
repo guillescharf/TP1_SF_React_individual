@@ -1,0 +1,139 @@
+/* Estilos generales */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+}
+a, a:hover, a:visited{
+    text-decoration: none;
+    color: black;
+}
+.mainContainer{
+    display: flex;
+    width: 80vw;
+    padding: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    margin-left: 10vw;
+    margin-top: 5vh;
+    background-color: rgb(87, 192, 196);
+    border-radius: 30px;
+}
+.navBar{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+button, .button{
+    border-radius: 5px;
+    padding: 3px;
+    width: 150px;
+    background-color: rgb(6, 131, 214);
+    cursor: pointer;
+    border: 2px solid blue;
+    text-rendering: auto;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;    
+}
+.button:hover, .currentSection{
+    background-color: blue;
+}
+.pageTitle{
+    margin-bottom: 20px;
+    font-size: 5vw;
+}
+/* Estilos especificos para la pagina index */
+.intro{
+
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+.intro h2{
+    margin-top: 20px;
+}
+.intro p{
+    text-decoration:none;
+}
+.devsList{
+    margin-top: 20px;
+    list-style:none;
+}
+/* Estilos especificos para la pagina del formulario de contacto */
+.contactForm{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: 350px;
+    padding: 20px;
+    background-color: lightblue;
+    border-radius: 5px;
+}
+input, textarea{
+    display: flex;
+    width: 300px;
+    border-radius: 5px;
+    resize: none;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    padding: 3px;
+}
+
+/* Estilos especificos para la pagina de la tabla de usuarios */
+table{
+    border: 1px solid blue;
+    background-color: lightblue;
+    padding: 15px;
+    border-radius: 5px;
+}
+table td{
+    padding: 5px;
+}
+table th{
+    border-bottom: 3px solid blue;
+    margin-bottom: 100px;
+}
+.even{
+    background-color: rgb(6, 131, 214);
+}
+
+/* Estilos especificos para la pagina de las tarjetas de Rick and Morty */
+.cardsContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.cardDetail img{
+    width: 100px;
+    border-radius: 50%;
+
+}
+.cardDetail{
+    display: flex;
+    width: 110px;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 2px solid lightblue;
+    background-color: lightblue;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 15px;
+}
+.cardName{
+    text-align: center;
+}
+.cardsPagination{
+    margin-top: 15px;
+}
